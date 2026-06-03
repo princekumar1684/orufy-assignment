@@ -2,11 +2,9 @@
 
 A full-stack MERN application for managing products with OTP-based authentication, image uploads, publishing controls, and a responsive admin dashboard.
 
-
 ## Live Demo
 
 🔗 Live link : https://mern-project-frontend-blond.vercel.app
-
 
 ## 📖 Overview
 
@@ -89,7 +87,7 @@ Users can:
 
 ## 📁 Project Structure
 
-text Productr │ ├── frontend │   ├── public │   ├── src │   │   ├── assets │   │   ├── components │   │   ├── layout │   │   ├── pages │   │   ├── routes │   │   └── main.jsx │   │ │   ├── .env │   ├── package.json │   └── vite.config.js │ ├── backend │   ├── config │   ├── controllers │   ├── middleware │   ├── models │   ├── routes │   ├── .env │   ├── app.js │   ├── server.js │   └── package.json │ └── README.md 
+text Productr │ ├── client │ ├── public │ ├── src │ │ ├── assets │ │ ├── components │ │ ├── layout │ │ ├── pages │ │ ├── routes │ │ └── main.jsx │ │ │ ├── .env │ ├── package.json │ └── vite.config.js │ ├── server │ ├── config │ ├── controllers │ ├── middleware │ ├── models │ ├── routes │ ├── .env │ ├── app.js │ ├── server.js │ └── package.json │ └── README.md
 
 ---
 
@@ -97,7 +95,7 @@ text Productr │ ├── frontend │   ├── public │   ├── src 
 
 ### Frontend (.env)
 
-env VITE_BACKEND_URL=https://your-backend-url.com 
+env VITE_BACKEND_URL=https://your-backend-url.com
 
 ### Backend (.env)
 
@@ -113,34 +111,33 @@ IMAGEKIT_PUBLIC_KEY=your_public_key
 
 IMAGEKIT_PRIVATE_KEY=your_private_key
 
-IMAGEKIT_URL_ENDPOINT=your_url_endpoint
----
+## IMAGEKIT_URL_ENDPOINT=your_url_endpoint
 
 ## 🚀 Installation
 
 ### Clone Repository
 
-bash git clone <repository-url>  cd Productr 
+bash git clone <repository-url> cd Productr
 
 ---
 
 ### Frontend Setup
 
-bash cd frontend  npm install  npm run dev 
+bash cd frontend npm install npm run dev
 
-Frontend runs on:
+client runs on:
 
-text http://localhost:5173 
+text http://localhost:5173
 
 ---
 
 ### Backend Setup
 
-bash cd backend  npm install  npm start 
+bash cd backend npm install npm start
 
-Backend runs on:
+server runs on:
 
-text http://localhost:3000 
+text http://localhost:3000
 
 ---
 
@@ -148,19 +145,29 @@ text http://localhost:3000
 
 ### Authentication
 
-http POST /api/auth/send-otp  POST /api/auth/verify-otp  GET /api/auth/me  POST /api/auth/logout 
+http POST /api/auth/send-otp
+
+POST /api/auth/verify-otp
+
+GET /api/auth/me POST /api/auth/logout
 
 ---
 
 ### Products
 
-http GET /api/products  POST /api/products/create  POST /api/products/update/:id  POST /api/products/delete/:id 
+http GET /api/products
+
+POST /api/products/create
+
+POST /api/products/update/:id
+
+POST /api/products/delete/:id
 
 ---
 
 ### Upload
 
-http POST /api/upload/image 
+http POST /api/upload/image
 
 ---
 
@@ -192,7 +199,7 @@ http POST /api/upload/image
 
 Example:
 
-json {   "rewrites": [     {       "source": "/(.*)",       "destination": "/index.html"     }   ] } 
+json { "rewrites": [ { "source": "/(.*)", "destination": "/index.html" } ] }
 
 ---
 
