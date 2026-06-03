@@ -2,7 +2,11 @@
 
 A full-stack MERN application for managing products with OTP-based authentication, image uploads, publishing controls, and a responsive admin dashboard.
 
----
+
+## Live Demo
+
+🔗 Live link : https://mern-project-frontend-blond.vercel.app
+
 
 ## 📖 Overview
 
